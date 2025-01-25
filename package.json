@@ -5,8 +5,10 @@
   "scripts": {
     "test:headless:login": "cross-env HEADLESS=true FEATURE_NAME=login mocha --timeout 30000 --reporter mochawesome --reporter-options overwrite=false,json=false,reportFilename=login-report src/features/login/login.spec.js",
     "test:headed:login": "cross-env HEADLESS=false FEATURE_NAME=login mocha --timeout 30000 src/features/login/login.spec.js",
-    "register:headless": "cross-env HEADLESS=true FEATURE_NAME=add-to-cart mocha --timeout 30000 src/features/registration/registration.spec.js",
-    "register:test": "cross-env HEADLESS=false FEATURE_NAME=add-to-cart mocha --timeout 30000 src/features/registration/registration.spec.js"
+    "register:headless": "cross-env HEADLESS=true FEATURE_NAME=register mocha --timeout 30000 src/features/registration/registration.spec.js",
+    "register:test": "cross-env HEADLESS=false FEATURE_NAME=register mocha --timeout 30000 src/features/registration/registration.spec.js",
+    "open-bank-account:test": "cross-env HEADLESS=false FEATURE_NAME=open_savings_acct mocha --timeout 30000 src/features/open-bank-account/open-bank-account.spec.js",
+    "open-bank-acc:headless": "cross-env HEADLESS=false FEATURE_NAME=open_savings_acct mocha --timeout 30000 src/features/open-bank-account/open-bank-account.spec.js"
   },
   "author": "Reginald Offemaria",
   "license": "ISC",
