@@ -28,7 +28,7 @@ mkdir ~/Desktop/SeleniumJS-Projects
 
 ```bash
 cd ~/Desktop/SeleniumJS-Projects
-git clone https://github.com/your-repo/selenium-parabank-demo.git
+git clone https://github.com/regie2197/selenium-js-parabank-demo.git
 ```
 ### 3. Install Dependencies
 
@@ -52,7 +52,13 @@ npm run test:headless:login
 - To run the registration test in headless mode:
 
 ```bash
-npm npm run register:headless
+npm run register:headless
+```
+3. Open New Bank Account - Savings Test (Headless)
+- To run the open new bank account - savings
+
+```bash
+npm run open-bank-acc:headless
 ```
 
 ### Headed Mode 🖥️ (With Browser UI)
@@ -76,6 +82,7 @@ npm run register:test
 
 - **Login Test**: Automates the login functionality using valid and invalid credentials on the ParaBank Demo website.
 - **Registration Test**: Automates the user registration process on the ParaBank Demo website with various user data.
+- **Open New Bank Account - Savings**: Automates the opening of a New Bank Account - SAVINGS.
 - **Headless Mode**: Run the tests without opening the browser window for faster execution.
 - **Headed Mode**: Run the tests with the browser window open, useful for debugging and visual checks.
 
