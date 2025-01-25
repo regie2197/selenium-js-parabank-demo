@@ -1,0 +1,28 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "address": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zipCode": "12345",
+        "phoneNumber": "555-1234",
+        "ssn": "123-45-6789",
+        "username": "john_doe",
+        "password": "password123",
+        "confirmPassword": "password123"
+    },
+    {
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "address": "456 Oak Rd",
+        "city": "Othertown",
+        "state": "TX",
+        "zipCode": "67890",
+        "phoneNumber": "555-5678",
+        "ssn": "987-65-4321",
+        "username": "jane_smith",
+        "password": "password456",
+        "confirmPassword": "password456"
+    }
+]
