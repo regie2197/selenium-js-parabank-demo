@@ -22,12 +22,13 @@ class AccountPage {
         await select.selectByVisibleText(accountType);
     }
 
-    // Select the "from" account for transferring funds
-    async selectFromAccount(fromAccount) {
+    // Select the "from" account for transferring funds by index
+    async selectFromAccountByIndex(index = 1) {
         const fromAccountDropdown = await this.driver.findElement(this.fromAccountDropdown);
         const select = new Select(fromAccountDropdown);
-        await select.selectByVisibleText(fromAccount);
+        await select.selectByIndex(index);
     }
+
 
     async clickOpenNewAccount() {
         const openAccountButton = await this.driver.findElement(this.openAccountButton);

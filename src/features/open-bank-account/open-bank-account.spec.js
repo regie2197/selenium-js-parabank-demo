@@ -23,7 +23,7 @@ describe('Parabank Open Bank Account Test Suite', function () {
     before(async function () {
         // Set up WebDriver
         const chromeOptions = new chrome.Options();
-        const headless = process.env.HEADLESS === 'true'; // Check for headless mode
+        const headless = process.env.HEADLESS === 'true';
 
         if (headless) {
             chromeOptions.addArguments('headless');
@@ -60,8 +60,8 @@ describe('Parabank Open Bank Account Test Suite', function () {
         await driver.get('https://parabank.parasoft.com/parabank/index.htm');
 
         // Perform login actions
-        await loginPage.enterUsername('regietest');
-        await loginPage.enterPassword('password123');
+        await loginPage.enterUsername('john');
+        await loginPage.enterPassword('demo');
         await loginPage.clickLogin();
 
         // Take a screenshot after login
@@ -101,8 +101,8 @@ describe('Parabank Open Bank Account Test Suite', function () {
         // Select Savings account type
         await accountPage.selectAccountType('SAVINGS');
 
-        // Choose an existing account to transfer funds into the new account.
-        await accountPage.selectFromAccount('14898');
+        // Choose an existing account to transfer funds into the new account by index 0.
+        await accountPage.selectFromAccountByIndex(0);
 
         // Click the "Open New Account" button
         await accountPage.clickOpenNewAccount();
